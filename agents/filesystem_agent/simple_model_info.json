@@ -1,0 +1,62 @@
+{
+  "model_type": "simple_linear",
+  "input_features": [
+    {
+      "name": "hour_of_day",
+      "index": 0,
+      "description": "Hour of day normalized to 0-1"
+    },
+    {
+      "name": "minute_of_hour",
+      "index": 1,
+      "description": "Minute of hour normalized to 0-1"
+    },
+    {
+      "name": "day_of_week",
+      "index": 2,
+      "description": "Day of week normalized to 0-1"
+    },
+    {
+      "name": "directory_depth",
+      "index": 3,
+      "description": "File path depth normalized"
+    },
+    {
+      "name": "has_extension",
+      "index": 4,
+      "description": "1.0 if file has extension, 0.0 otherwise"
+    },
+    {
+      "name": "access_count_log",
+      "index": 5,
+      "description": "Log of access count, normalized"
+    },
+    {
+      "name": "avg_interval_hours",
+      "index": 6,
+      "description": "Average access interval in hours, normalized"
+    },
+    {
+      "name": "directory_activity",
+      "index": 7,
+      "description": "Recent directory activity, normalized"
+    }
+  ],
+  "output": {
+    "name": "access_probability",
+    "description": "Probability of file access (0.0 to 1.0)"
+  },
+  "model_info": {
+    "architecture": "Simple linear model (8->1) with sigmoid activation",
+    "activations": "Sigmoid",
+    "input_shape": [
+      1,
+      8
+    ],
+    "output_shape": [
+      1,
+      1
+    ],
+    "parameters": 9
+  }
+}
