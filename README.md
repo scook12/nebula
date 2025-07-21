@@ -131,7 +131,7 @@ Machine learning models for system optimization:
 
 | Platform | NPU Support | Agent Runtime | Status |
 |----------|-------------|---------------|---------|
-| **macOS (Apple Silicon)** | ✅ Apple Neural Engine | ✅ Full | Ready |
+| **macOS (Apple Silicon)** | ✅ Apple Neural Engine | ✅ Full | Mock |
 | **macOS (Intel)** | 🔶 CPU Fallback | ✅ Full | Ready |
 | **Linux** | 🚧 Intel NPU (planned) | ✅ Full | Ready |
 | **Windows** | 🚧 Intel NPU (planned) | 🔶 Limited | Development |
