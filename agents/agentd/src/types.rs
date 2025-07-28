@@ -91,7 +91,7 @@ pub struct AgentMessage {
 }
 
 /// Types of messages agents can send
-#[derive(Debug, Clone, Serialize, Deserialize)]
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub enum MessageType {
     /// Basic text/data message
     Data,
